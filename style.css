@@ -1,0 +1,409 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+html {
+	font-size: 14px;
+}
+
+body {
+	font-family:'Source Code Pro';
+}
+
+main {
+	min-width: 550px;
+	margin: 0 auto;
+	
+}
+
+/*----------------nav-----------------*/
+nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	ul.nav li {
+		padding: 25px 5px;
+		display: inline-block;
+	}
+	ul.main li{
+		float:right;
+		padding: 25px 10px;
+		z-index: 10;
+	}
+
+	ul.main li a {
+		text-decoration: none;
+		width: 80px;
+		padding: 10px 0px;
+		background: radial-gradient(circle, rgba(256, 256, 256, 0.5), rgba(256, 256, 256, 0));
+		border-radius: 5px;
+		display: inline-block;
+		text-align: center;
+
+	}
+
+	ul.social li{
+		float:left;
+		padding-left: 20px;
+		padding-top: 35px
+	}
+
+
+	ul.nav li a {
+		color: RGBA(75, 75, 75, 1);
+	}
+
+	ul.social li a:hover {
+		color: RGBA(150, 150, 150, 1);
+	}
+
+	ul.main li a:hover {
+		background: radial-gradient(circle, rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0));
+	}
+
+/*-----------------header-------------------*/
+
+header {
+	background: linear-gradient(white, RGBA(105, 95, 98, 1));
+}
+
+	h1 {
+		font-family: 'Dawning of a New Day', cursive;
+		font-size: 90px;
+		text-align: center;
+		padding: 200px 0 250px;
+		color: black;
+		letter-spacing: 4px;
+		margin: 0;
+	}
+
+	.dot {
+		width: 5px;
+		height: 5px;
+		background: RGBA(166, 19, 66, 1);
+		border-radius: 50%;
+		position: relative;
+		top: -340px;
+		left: 480px;
+	}
+
+/*--------------video----------------*/
+
+section#video {
+	background-image: RGBA(78, 122, 54, 1);
+}
+
+#video img {
+	width: 100%;
+	display: block;
+}
+	section#video .wrapper {
+		/*max-width: 1080px;*/
+		margin: 0 auto;
+		position: relative;
+	}
+
+	section#video video {
+		margin: 0;
+		width: 100%;
+		display: block;
+	}
+
+	section#video h2 {
+		color: white;
+		position: absolute;
+		font-size: 100px;
+		font-family:'Dawning of a New Day', cursive;
+		font-weight: lighter;
+		bottom: 30px;
+		left: 0;
+		right: 0;
+	}
+
+/*---------------about-----------------------*/
+
+div.gradient {
+	background: linear-gradient(RGBA(105, 95, 98, 1), white);
+}
+
+section#about {
+	padding-bottom: 200px;
+}
+
+h2 {
+	margin: 0;
+	text-align: center;
+	padding-bottom: 10px;
+	font-family: 'Dawning of a New Day', cursive;
+	font-size: 30px;
+}
+
+section#about p {
+	padding-bottom: 25px;
+}
+
+section#about p:first-of-type,
+.bios {
+	padding-top: 40px;
+	border-top: 2px solid RGBA(166, 19, 66, 1);
+}
+
+.bios {
+	border-top: 2px solid RGBA(238, 146, 179, 1);
+}
+
+
+section#about .wrapper,
+ .bios,
+ section#work .wrapper,
+ section#contact {
+	max-width: 970px;
+	min-width: 638px;
+	margin: 0 auto;
+}
+
+section#about .wrapper {
+	padding-top: 150px;
+}
+
+
+section#about .statement {
+	padding-bottom: 200px;
+}
+
+
+.bios li {
+	float: left;
+	box-shadow: 0px 3px 28px -1px rgba(0,0,0,0.75);
+	margin: 12px;
+	border: 20px solid RGBA(51, 65, 57, 1);
+	position: relative;
+	z-index: 1;
+}
+
+.bios li img {
+	display: block;
+}
+
+.bios li:hover .overlay {
+	display: block;
+}
+
+.bios li .overlay {
+	width: 250px;
+	height: 250px;
+	background: RGBA(105, 95, 98, 0.5);
+	position:absolute;
+	top: 0;
+	left: 0;
+	color: white;
+	text-align: center;
+	display: none;
+}
+
+.bios li .overlay h3 {
+	line-height: 1.5;
+	font-family: “Franklin Gothic Medium”, “Franklin Gothic”, “ITC Franklin Gothic”, Arial, sans-serif;
+	text-transform: uppercase;
+	padding-top: 5px;
+}
+
+
+
+/*-------------work----------*/
+
+section#work .wrapper {
+	padding: 60px 15px;
+}
+
+section#work h2 {
+	border-bottom: 2px solid RGBA(166, 19, 66, 1);
+	padding-bottom: 30px;
+}
+
+section#work h3 {
+	border-bottom: 2px solid RGBA(238, 146, 179, 1);
+	padding-bottom: 15px;
+	font-family: “Franklin Gothic Medium”, “Franklin Gothic”, “ITC Franklin Gothic”, Arial, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+section#work li.work {
+	padding:25px;
+}
+
+section#work li.work:first-of-type {
+	padding-top: 100px;
+}
+
+section#work div.description,
+section#work div.still {
+	float: left;
+	width: 50%;
+	position:relative;
+}
+
+section#work div.description {
+	padding-left: 25px;
+}
+
+section#work .description ol {
+	list-style: lower-roman;
+}
+
+section#work .description ol li p {
+	margin: 0;
+
+}
+
+section#work img {
+	display: block;
+	width: 100%;
+	box-shadow: 0px 3px 28px -1px rgba(0,0,0,0.75);
+	border: 3px solid RGBA(51, 65, 57, 1);
+	position: relative;
+}
+
+section#work ul li div.overlay {
+	background: RGBA(105, 95, 98, 0.5);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	color: white;
+	display: none;
+}
+
+section#work ul li div.overlay h2 {
+	border: none;
+	padding-top: 80px;
+}
+
+section#work ul li .still:hover div.overlay {
+	display: block;
+}
+
+/*-----------------contact--------------------*/
+
+section#contact h2 {
+	border-bottom: 2px solid RGBA(238, 146, 179, 1);
+	padding-bottom: 30px;
+}
+
+section#contact {
+	background: linear gradient(white, RGBA(199, 196, 197, 1));
+	text-align: center;
+	padding-top: 60px;
+}
+
+section#contact .container {
+	width: 80%;
+	min-width: 800px;
+	margin: 0 auto;
+	padding: 20px 10px 80px;
+}
+
+section#contact .button	{
+	width: 150px;
+	height: 150px;
+	float: left;
+	border-radius: 50%;
+	margin: 20px;
+}
+
+
+section#contact .facebook {
+	background: RGBA(78, 122, 54, 1);
+	box-shadow: 0px 2px 20px -1px rgba(0,0,0,0.75);
+}
+
+section#contact .facebook:hover {
+	background: RGBA(78, 150, 80, 1);
+	box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+}
+
+section#contact .twitter {
+	background: RGBA(52, 65, 56, 1);
+	box-shadow: 0px 2px 20px -1px rgba(0,0,0,0.75);
+}
+
+section#contact .twitter:hover {
+	background: RGBA(52, 85, 70, 1);
+	box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+}
+section#contact .instagram {
+	background: RGBA(166, 19, 66, 1);
+	box-shadow: 0px 2px 20px -1px rgba(0,0,0,0.75);
+}
+
+section#contact .instagram:hover {
+	background: RGBA(166, 40, 85, 1);
+	box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+}
+
+section#contact .email {
+	background: RGBA(187, 67, 0, 1);
+	box-shadow: 0px 2px 20px -1px rgba(0,0,0,0.75);
+}
+
+section#contact .email:hover {
+	background: RGBA(187, 87, 10, 1);
+	box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+}
+section#contact .button a {
+	color: white;
+	font-size: 70px;
+}
+
+section#contact .button a i {
+	padding: 40px 0px;
+}
+
+section#contact p {
+	padding-top: 50px;
+}
+
+
+
+/*------------------footer--------------------*/
+
+
+footer {
+	background: RGBA(52, 65, 56, 1);
+	display: block;
+	width: 100%;
+	color: RGBA(105, 96, 98, 1);
+}
+
+footer a {
+	color: RGBA(105, 96, 98, 1);
+}
+
+footer h2 {
+	float: left;
+	padding-left: 30px;
+	font-size: 30px;
+
+}
+
+footer p {
+	float: right;
+	padding-right: 30px;
+	font-size: 18px;
+}
